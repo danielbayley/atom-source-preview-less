@@ -39,6 +39,14 @@
     "less": "^2.6.1",
     "loophole": "^1.1.0"
   },
+  "config": {
+    "includePaths": [
+      "lib",
+      "styles",
+      "less",
+      "css"
+    ]
+  },
   "coffeelintConfig": {
     "arrow_spacing": {
       "level": "error"

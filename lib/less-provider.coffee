@@ -1,21 +1,24 @@
-[loophole, less, preview] = []
+[loophole, path, less, config, preview] = []
+
+relative = ['.','..','../..']
 
 module.exports =
 class LessProvider
 	fromScopeName: 'source.css.less'
 	toScopeName: 'source.css'
 
-	transform: (code, {sourceMap} = {}) -> #filePath
-
+	transform: (code, { filePath, sourceMap } = {}) ->
 		less ?= @unsafe -> require 'less'
+		{basename} = path ?= require 'path'
+		{config: {includePaths}} = config ?= require '../package.json'
 
 		options =
-			filename: atom.workspace.getActiveTextEditor().getTitle() #filePath
-			paths: ['.','./lib'].concat atom.project.getPaths()
+			filename: filePath.split(/[/]/).pop()
+			paths: includePaths.concat relative, atom.project.getPaths()
 			#rootpath:
 			syncImport: true
 			#relativeUrls:
-			sourceMap: { sourceMapFullFilename: sourceMap }
+			sourceMap: sourceMap # { sourceMapFullFilename: ''}
 			#compress: false
 
 		#less.logger.addListener error: (err) -> throw err
