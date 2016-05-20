@@ -1,11 +1,22 @@
-# source-preview-less package
+Preview [Less] output in [Atom]
+===============================
 
-[source-preview] provider for [LESS].
+Atom [source-preview] provider for [Less].
 
-## Requirement
-
+Requirements
+------------
 * [source-preview]
 
+Install
+-------
+`apm install source-preview-less` or search "less" under packages within Atom.
 
+License
+-------
+[MIT] © [Daniel Bayley]
+
+[MIT]:							LICENSE.md
+[Daniel Bayley]:		https://github.com/danielbayley
+[atom]:							https://atom.io
 [source-preview]:		https://atom.io/packages/source-preview
 [less]:							http://lesscss.org

@@ -2,6 +2,8 @@
 
 module.exports =
 class LessProvider
+
+	fromGrammarName: 'Less'
 	fromScopeName: 'source.css.less'
 	toScopeName: 'source.css'
 
