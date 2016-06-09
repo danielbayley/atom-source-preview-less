@@ -8,7 +8,7 @@
     "source",
     "css"
   ],
-  "homepage": "http://atom.io/packages/source-preview-less",
+  "homepage": "https://atom.io/packages/source-preview-less",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/danielbayley/atom-source-preview-less.git"
@@ -16,9 +16,7 @@
   "bugs": {
     "url": "https://github.com/danielbayley/atom-source-preview-less/issues"
   },
-  "author": {
-    "name": "danielbayley <danielbayley@me.com>"
-  },
+  "author": "Daniel Bayley <daniel.bayley@me.com> (https://github.com/danielbayley)",
   "private": true,
   "license": "MIT",
   "engines": {

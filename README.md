@@ -9,7 +9,7 @@ Requirements
 
 Install
 -------
-`apm install source-preview-less` or search "less" under packages within Atom.
+`apm install source-preview-less` or search “less” under packages within Atom.
 
 License
 -------
