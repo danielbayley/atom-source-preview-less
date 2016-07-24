@@ -37,7 +37,7 @@
   "providedServices": {
     "preview.provider": {
       "versions": {
-        "0.1.0": "provide"
+        "0.1.0": "activate"
       }
     }
   }
