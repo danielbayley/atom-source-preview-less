@@ -23,6 +23,9 @@
     "less": "^2.6.1",
     "loophole": "^1.1.0"
   },
+  "scripts": {
+    "preinstall": "apm install source-preview"
+  },
   "engines": {
     "atom": "*"
   },
